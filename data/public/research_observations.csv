@@ -1,0 +1,7 @@
+observation_id,source_id,observed_date,topic,valence,evidence_type,firsthand,paraphrase,interpretation,confidence
+OBS-001,SRC-004,2026-10-06,gameplay,positive,first_person_report,yes,A commenter who identifies as a developer says they enjoy the gameplay and are impressed with the technical implementation.,A single favourable experience and technical impression.,medium
+OBS-002,SRC-004,2026-10-06,visual_appeal,positive,secondhand_impression,no,A commenter who had not played says screenshots make the game look appealing.,Visual praise without gameplay experience.,high
+OBS-003,SRC-004,2026-10-07,game_pacing,negative,first_person_report,yes,A commenter says matching the real-world clock makes in-game progress feel slow compared with other simulation games.,Potential perceived pacing friction worth further validation.,medium
+OBS-004,SRC-004,2026-10-08,developer_updates,positive,first_person_report,yes,A commenter praises the pace of game improvements.,Rapid iteration may be a source of goodwill.,medium
+OBS-005,SRC-004,2026-10-08,developer_updates,positive,secondhand_impression,no,A commenter reports repeatedly seeing announcements of new additions on X.,Update visibility may encourage community interest; the individual updates were not independently audited.,medium
+OBS-006,SRC-004,2026-10-10,engagement_depth,negative,first_person_report,yes,A commenter says the gameplay became boring after some time and asks for reasons to keep playing beyond conversation.,Possible limited long-term gameplay loop; no retention data exists here.,medium

@@ -1,0 +1,6 @@
+source_id,source_type,title,url,published_or_updated,access_date,usage_notes
+SRC-001,official,Official Lagos Life Website,https://lagoslife.app/,2026-10-01,2026-10-17,Product reference; no automated extraction or internal data access
+SRC-002,official,Vatar Company Website,https://vatar.com/,2026-10-09,2026-10-17,Company and product positioning; claims are attributed to Vatar
+SRC-003,official,Lagos Life Privacy Policy,https://lagoslife.app/privacy,2026-10-01,2026-10-17,For designing privacy-preserving suggested event schema only
+SRC-004,community,r/Nigeria - Lagos Life discussion,https://www.reddit.com/r/Nigeria/comments/1wzdj0o/lagos_life/,2026-10-06,2026-10-17,Manually reviewed public discussion; short paraphrases only; biased nonrepresentative sample
+SRC-005,policy,X Terms of Service,https://x.com/en/tos,,2026-10-17,No X scraping; use an authorised API or manual references only
