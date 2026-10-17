@@ -7,8 +7,12 @@
 ## Why this project exists
 Lagos Life is a browser-based social world inspired by Lagos. This portfolio project asks how product teams could turn public feedback and privacy-appropriate internal event instrumentation into evidence-backed improvements in gameplay pacing, engagement and product development. The product identity was verified against [Vatar's site](https://vatar.com/) linking to [lagoslife.app](https://lagoslife.app/).
 
+## Phase 2: source-audited product research
+
+The expanded pilot includes **14 manually curated observations from four source documents** (three Reddit discussions, one guest review), source-aware topic checks, and a product recommendation brief. **These are not player sentiment percentages, retention metrics, or representative findings.** See [Phase 2 brief](docs/phase2_brief.md) and [trust-and-safety context](docs/trust_safety_watch.md). The latest dashboard source includes a Product decisions tab. The website demo is not deployed yet.
+
 ## Phase 1 deliverables
-- **Traceable public feedback dataset:** six hand-coded, paraphrased observations from one public [r/Nigeria thread](https://www.reddit.com/r/Nigeria/comments/1wzdj0o/lagos_life/), with dates, evidence type and confidence.
+- **Traceable public feedback dataset:** initial six hand-coded, paraphrased observations from one public [r/Nigeria thread](https://www.reddit.com/r/Nigeria/comments/1wzdj0o/lagos_life/), with dates, evidence type and confidence.
 - **Reproducible Python + SQLite pipeline:** validates source IDs, dates, labels, uniqueness and provenance, then creates queryable summaries.
 - **Interactive Streamlit dashboard:** observation topics, labelled qualitative findings, and click-through source evidence.
 - **Separate synthetic gameplay lab:** deterministic 250-player scenario with correctly eligible D1/D7 cohorts. No production numbers claimed.

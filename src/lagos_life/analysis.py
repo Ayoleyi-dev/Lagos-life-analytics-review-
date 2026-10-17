@@ -67,7 +67,7 @@ def validate_observations(
             raise ValidationError(f"Invalid firsthand flag at row {index}")
         if row["confidence"] not in VALID_CONFIDENCE:
             raise ValidationError(f"Invalid confidence at row {index}")
-        if not row["topic"].strip() or not row["paraphrase"].strip():
+        if not row["topic"].strip() or not row["paraphrase"].strip() or not row["interpretation"].strip():
             raise ValidationError(f"Missing topic or paraphrase at row {index}")
 
 
@@ -77,7 +77,7 @@ def summarize(rows: list[dict[str, str]]) -> dict:
         "unit_of_analysis": "manually coded public observation",
         "sample_design": "convenience sample; no population inference",
         "n_observations": len(rows),
-        "n_source_threads": len({r["source_id"] for r in rows}),
+        "n_evidence_sources": len({r["source_id"] for r in rows}),
         "topic_counts": dict(sorted(Counter(r["topic"] for r in rows).items())),
         "valence_counts": dict(sorted(Counter(r["valence"] for r in rows).items())),
         "firsthand_count": sum(r["firsthand"] == "yes" for r in rows),

@@ -36,3 +36,6 @@ https://lagoslife.app/
 https://lagoslife.app/privacy
 https://www.reddit.com/r/Nigeria/comments/1wzdj0o/lagos_life/
 https://x.com/en/tos
+
+## Phase 2 extension — 17 October 2026
+The manual convenience sample has expanded from 6 observations in one thread to **14 observations across 4 documents** (three separate Reddit discussions and one editorial guest review). This increases the diversity of source *documents*, not statistical representativeness. The guest review is **one reviewer**, no matter how many independently coded statements are made. Its publication date was not unambiguously presented, so reviewer rows use the **access/coding date** of 17 October 2026 rather than an inferred publication date. Full comment-level permalinks have not been independently collected; current links identify a source document and must not be represented as precise original-comment links. Two-person blind coding and source-level replication remain outstanding. We exclude third-party copycat guide websites from the source registry because ownership and independent verification are uncertain.

@@ -40,7 +40,7 @@ class PublicResearchTests(unittest.TestCase):
         summary = summarize(self.obs)
         self.assertEqual(summary["n_observations"], len(self.obs))
         self.assertEqual(sum(summary["topic_counts"].values()), len(self.obs))
-        self.assertEqual(summary["n_source_threads"], 1)
+        self.assertEqual(summary["n_evidence_sources"], 4)
 
 
 class SyntheticSimulationTests(unittest.TestCase):
@@ -83,10 +83,10 @@ class SQLTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             p = Path(directory) / "research.sqlite3"
             build_database(ROOT / "data/public/research_observations.csv", ROOT / "data/public/source_registry.csv", p)
-            self.assertEqual(sum(count for _, count in topic_breakdown(p)), 6)
+            self.assertEqual(sum(count for _, count in topic_breakdown(p)), 14)
             with sqlite3.connect(p) as con:
                 n = con.execute("SELECT COUNT(*) FROM observations o JOIN sources s ON o.source_id=s.source_id").fetchone()[0]
-            self.assertEqual(n, 6)
+            self.assertEqual(n, 14)
 
 
 if __name__ == "__main__":

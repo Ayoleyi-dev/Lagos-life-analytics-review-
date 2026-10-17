@@ -6,7 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from lagos_life.analysis import write_summary  # noqa: E402
+from lagos_life.analysis import write_summary, read_csv  # noqa: E402
+from lagos_life.evidence import audit_evidence  # noqa: E402
 from lagos_life.simulation import retention, simulate_sessions  # noqa: E402
 from lagos_life.storage import build_database, topic_breakdown  # noqa: E402
 
@@ -22,6 +23,9 @@ build_database(
     out / "public_research.sqlite3",
 )
 print("SQL topic breakdown:", topic_breakdown(out / "public_research.sqlite3"))
+audit = audit_evidence(read_csv(ROOT / "data/public/research_observations.csv"),
+                       read_csv(ROOT / "data/public/source_registry.csv"))
+(out / "evidence_audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
 rows = simulate_sessions()
 out.mkdir(exist_ok=True)
 with (out / "synthetic_sessions.csv").open("w", newline="", encoding="utf-8") as file:
