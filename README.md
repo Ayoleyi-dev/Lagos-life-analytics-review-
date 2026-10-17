@@ -23,7 +23,7 @@ git clone https://github.com/Ayoleyi-dev/Lagos-life-analytics-review-.git
 cd Lagos-life-analytics-review-
 git checkout development
 python -m venv .venv
-# Windows: .venv\\Scripts\\activate
+# Windows: .venv\Scripts\activate
 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/quickstart.py
